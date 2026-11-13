@@ -37,7 +37,7 @@ import {
   proposalDecisionInput,
   resumeSchema,
 } from "./schemas.js";
-import { WORKFLOW_ID } from "./workflow.js";
+const WORKFLOW_ID = "client-onboarding-research";
 
 export interface ServerOptions {
   engine: Engine;

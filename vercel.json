@@ -1,11 +1,13 @@
 {
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index" },
-    { "source": "/health", "destination": "/api/index" },
-    { "source": "/start", "destination": "/start.html" },
-    { "source": "/start/(.*)", "destination": "/start.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/", "destination": "/landing.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.ts",
+      "use": "@vercel/node",
+      "config": { "includeFiles": "public/**" }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.ts" }
   ]
 }
