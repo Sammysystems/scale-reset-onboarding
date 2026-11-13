@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Scale Reset | Operator</title>
+  <meta name="description" content="Operator desk for The Scale Reset discovery intake. Review checks, approve proposals, and manage the outbox." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#e4e7e2" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/fonts.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/admin.css" />
+</head>
+<body class="admin">
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="/admin" aria-label="The Scale Reset operator">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1.3" opacity=".45" />
+          <path d="M9.5 21c1.5 1.7 3.7 2.6 6.3 2.6 3.4 0 5.7-1.6 5.7-3.9 0-2-1.6-3.2-4.9-3.8l-2-.4c-2.6-.5-3.9-1.5-3.9-3.1 0-2 2-3.4 4.9-3.4 2.2 0 4 .7 5.3 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+          <circle cx="24.4" cy="9.4" r="2.2" fill="var(--lime)" />
+        </svg>
+        <span class="brand-name">The Scale Reset</span>
+        <span class="brand-sub">Operator</span>
+      </a>
+      <div class="topbar-meta">
+        <span id="conn" class="step-meta">Connecting</span>
+      </div>
+    </header>
+
+    <main id="view" class="view admin-view" aria-live="polite"></main>
+
+    <footer class="footer">
+      <span>Discovery to paid onboarding</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Human approval before every send</span>
+      <span class="footer-spacer"></span>
+      <span class="footer-mark">Operator desk</span>
+    </footer>
+  </div>
+
+  <dialog id="clearDialog" class="admin-dialog" aria-labelledby="clearTitle">
+    <div class="admin-dialog-body">
+      <h2 id="clearTitle">Clear test data</h2>
+      <p>Deletes every discovery and queued email on this server. Client links stop working. Runs already started are not touched. This cannot be undone.</p>
+      <label class="admin-check">
+        <input id="clearConfirm" type="checkbox" />
+        <span>I understand this clears all test discoveries and the outbox.</span>
+      </label>
+      <div class="admin-actions">
+        <button class="admin-btn" type="button" data-action="clear-cancel">Cancel</button>
+        <button id="clearRun" class="admin-btn danger" type="button" data-action="clear-run" disabled>Clear data</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/assets/admin.js"></script>
+</body>
+</html>
+

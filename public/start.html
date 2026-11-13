@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The four-question check | The Scale Reset</title>
+  <meta name="description" content="Four quick questions about how your business runs, then a twenty-minute call if it is a fit." />
+  <meta name="theme-color" content="#e4e7e2" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/fonts.css" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="The Scale Reset">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1.3" opacity=".45" />
+          <path d="M9.5 21c1.5 1.7 3.7 2.6 6.3 2.6 3.4 0 5.7-1.6 5.7-3.9 0-2-1.6-3.2-4.9-3.8l-2-.4c-2.6-.5-3.9-1.5-3.9-3.1 0-2 2-3.4 4.9-3.4 2.2 0 4 .7 5.3 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+          <circle cx="24.4" cy="9.4" r="2.2" fill="var(--lime)" />
+        </svg>
+        <span class="brand-name">The Scale Reset</span>
+        <span class="brand-sub">Client onboarding</span>
+      </a>
+      <div class="topbar-meta">
+        <span id="stepMeta" class="step-meta">Private check</span>
+        <button id="copyLink" class="ghost-link" type="button" data-action="copy-link">Copy my link</button>
+      </div>
+    </header>
+
+    <main id="view" class="view" aria-live="polite"></main>
+
+    <footer class="footer">
+      <span>Private check</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Your answers are private to you and The Scale Reset</span>
+      <span class="footer-spacer"></span>
+      <span class="footer-mark">Systems for service businesses</span>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "clientName": "Halden & Co",
+  "industry": "B2B bookkeeping",
+  "website": "https://halden.example",
+  "context": "Two-partner firm. Enquiries come from a contact form, a shared inbox, and referrals.",
+  "docs": [
+    "Owner wrote: we lose track of quotes when the inbox gets busy."
+  ],
+  "form": {
+    "businessDescription": "A two-partner bookkeeping firm serving small agencies and consultancies that have outgrown a spreadsheet.",
+    "targetAudience": "Owners of 5-20 person agencies who need monthly books, payroll support, and someone to answer tax questions.",
+    "brandPersonality": "Calm, precise, plain-spoken. We explain the number before we recommend the fix.",
+    "competitors": "Local accounting practices that bundle bookkeeping into annual accounts, and a few online bookkeeping services.",
+    "goals": "Respond to every new enquiry within one working day and stop losing quote requests in the shared inbox.",
+    "toneExamples": "Here is what happens next, and who does it.",
+    "offLimits": "No jargon, no guarantees about tax outcomes, never mention competitor pricing."
+  },
+  "source": "demo"
+}
