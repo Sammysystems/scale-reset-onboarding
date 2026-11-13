@@ -61,9 +61,9 @@ Two phases, one record:
    taps and short answers build a live brief, and a deterministic play matcher suggests 1–2
    automation plays. A pre-call proposal is drafted but hidden from the client. The model
    never chooses the play or sets the price.
-2. **The call.** The client adds contact details and books through the Cal.com inline embed
-   (or requests a time when `CAL_LINK` is blank). `BOOKING_CREATED`, `BOOKING_RESCHEDULED`,
-   `BOOKING_CANCELLED`, and `MEETING_ENDED` keep the session in sync via the signed webhook.
+2. **The booking.** The client adds contact details, picks a preferred time in a custom
+   modal, and continues to WhatsApp via `wa.me`. The session is marked `call_booked` with
+   source `whatsapp`.
 3. **Human gate.** In `/admin` you review the brief and call notes, save the notes to build
    the post-call proposal, approve it, and send the email. The client sees the resolved
    proposal at the same link, then approves and pays.
@@ -73,24 +73,24 @@ Two phases, one record:
 Client routes:
 - `POST /api/discovery/start`
 - `GET  /api/discovery/:id`
-- `POST /api/discovery/:id/step|edit|contact|request-call|booked`
-- `POST /api/webhooks/cal` — signed Cal.com events (`x-cal-signature-256`)
+- `POST /api/discovery/:id/step|edit|contact|request-call`
 
 Operator routes (gated by `ADMIN_TOKEN` when set):
 - `GET  /api/admin/discoveries` · `GET /api/admin/discoveries/:id`
 - `POST /api/admin/discoveries/:id/call-done|approve|send|paid|onboard`
 - `GET  /api/admin/discoveries/:id/email` — rendered email preview
 
-Sessions persist to `DISCOVERY_ROOT` (default `.data/discovery`); emails always write an
-outbox copy under `OUTBOX_DIR` (default `.data/outbox`) and send through Resend only when
-`RESEND_API_KEY` + `RESEND_FROM` are set. `CALL_URL`, `PAYMENT_URL`, and `WHATSAPP_URL` are
-optional; the proposal adapts when they are blank.
+Sessions persist to InsForge when `INSFORGE_URL` + `INSFORGE_API_KEY` are set, otherwise to
+`DISCOVERY_ROOT` (default `.data/discovery`). Emails always write an outbox copy under
+`OUTBOX_DIR` (default `.data/outbox`) and send through Resend only when `RESEND_API_KEY` +
+`RESEND_FROM` are set. `CALL_URL`, `PAYMENT_URL`, and `WHATSAPP_URL` are optional; the
+proposal adapts when they are blank.
 
-Set `CAL_LINK` (e.g. `scale-reset/intro`) to mount the inline calendar, and
-`CAL_WEBHOOK_SECRET` to accept signed webhooks. `CALL_URL` falls back to
-`https://cal.com/<CAL_LINK>`. Cal Cloud cannot reach `http://localhost`, so local webhook
-testing uses signed fixtures or a tunnel. `OPERATOR_EMAIL` receives a "call booked" note
-(written to the outbox when Resend is not configured).
+Set `WHATSAPP_NUMBER` to the number that receives bookings. The modal posts to
+`request-call`, then redirects to `https://wa.me/<WHATSAPP_NUMBER>`. `CALL_URL` also falls
+back to that `wa.me` link. `OPERATOR_EMAIL` receives a booking note (written to the outbox
+when Resend is not configured). Set `INSFORGE_URL` + `INSFORGE_API_KEY` to persist
+discoveries in InsForge; otherwise local files under `DISCOVERY_ROOT` are used.
 
 ## Real model
 

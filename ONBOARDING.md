@@ -10,23 +10,24 @@ npm run studio:demo   # same, seeded with 4 example discoveries
 ```
 
 Send the client their link (`http://127.0.0.1:8790/?s=<id>`). The client answers four
-questions, adds contact details, and books through the Cal.com inline embed (or requests a
-time when `CAL_LINK` is blank). In `/admin`: review the brief and call block, add the call
-notes and press **Call done & prepare proposal**, then **Approve plan**, **Send email**,
-**Mark paid**, and **Start onboarding**. Discovery answers become the onboarding intake, so
-the client is never asked twice.
+questions, adds contact details, picks a preferred time in the booking modal, and continues
+to WhatsApp. In `/admin`: review the brief and booking block, add the call notes and press
+**Call done & prepare proposal**, then **Approve plan**, **Send email**, **Mark paid**, and
+**Start onboarding**. Discovery answers become the onboarding intake, so the client is never
+asked twice.
 
 The pre-call proposal is drafted when the call is booked but stays hidden. Only
 `call-done` promotes it to a post-call proposal and reveals it at the client link.
 
-- Set `CAL_LINK` (e.g. `scale-reset/intro`) and `CAL_WEBHOOK_SECRET`. Webhooks are signed
-  with `x-cal-signature-256`; local testing needs a tunnel or signed fixtures because Cal
-  Cloud cannot reach `http://localhost`.
+- Set `WHATSAPP_NUMBER` (default `2348035248296`). The booking modal redirects to
+  `https://wa.me/<WHATSAPP_NUMBER>` after `request-call`.
+- Set `INSFORGE_URL` + `INSFORGE_API_KEY` to persist discoveries in InsForge; without them
+  the studio uses local files under `DISCOVERY_ROOT`.
 - Without `RESEND_API_KEY` + `RESEND_FROM`, proposals and booking notes are written to
   `.data/outbox` instead of sent. Set `OPERATOR_EMAIL` to receive booking notes.
 - Set `ADMIN_TOKEN` before exposing `/admin` beyond localhost.
 - `CALL_URL`, `PAYMENT_URL`, and `WHATSAPP_URL` are optional; `CALL_URL` falls back to
-  `https://cal.com/<CAL_LINK>` when blank.
+  `https://wa.me/<WHATSAPP_NUMBER>` when blank.
 
 ## 1. Configure
 

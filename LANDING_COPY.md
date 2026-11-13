@@ -147,7 +147,7 @@ You get the admin view, the written SOP, and a handover session. Then you run it
 Access is limited to what the build needs. You can revoke it at any time.
 
 **I am not in Lagos. Can we still work?**
-Yes. The build happens remotely. Calls are on Cal.com.
+Yes. The build happens remotely. You book a time on WhatsApp.
 
 ## 9. Final action
 
@@ -165,7 +165,7 @@ Start without an email or a password.
 Automation for service businesses.
 Lagos and Uyo, working remotely.
 
-Builds / How it works / FAQ / Cal.com / WhatsApp / Privacy
+Builds / How it works / FAQ / WhatsApp / Privacy
 
 © 2026 The Scale Reset
 
