@@ -162,12 +162,10 @@ Start without an email or a password.
 ## Footer
 
 **The Scale Reset**
-Automation for service businesses.
-Lagos and Uyo, working remotely.
 
-Builds / How it works / FAQ / WhatsApp / Privacy
+Builds / How it works / FAQ / Privacy
 
-© 2026 The Scale Reset
+Copyright 2026 The Scale Reset
 
 ## Meta and social
 
@@ -179,7 +177,7 @@ OG title: `The follow-up, handled.`
 
 OG description: `A two-week automation build for service businesses in Nigeria. Four questions, then a twenty-minute call.`
 
-OG image: 1200x630 docket card with the headline, a real intake screenshot, and the wordmark. Alt: `A work order for a service business, with the four-question check on a phone.`
+OG image: 1200x630 docket card with the headline and the wordmark. Alt: `The Scale Reset: the follow-up, handled.`
 
 ## Structured data
 

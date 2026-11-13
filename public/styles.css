@@ -17,6 +17,8 @@
   --serif: "Archivo", "Arial Narrow", sans-serif;
   --sans: "Public Sans", "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-snap: cubic-bezier(0.2, 0.85, 0.2, 1);
 }
 
 * {
@@ -1282,6 +1284,28 @@ textarea {
   }
 }
 
+::view-transition-old(root) {
+  animation: view-out 160ms ease both;
+}
+
+::view-transition-new(root) {
+  animation: view-in 240ms var(--ease-out) both;
+}
+
+@keyframes view-out {
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes view-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
 body.admin {
   background: #0e0f0d;
   color: #f2efe6;
@@ -1997,10 +2021,38 @@ body.admin .dot {
   border-radius: 22px;
   background: transparent;
   color: var(--ink);
+  opacity: 0;
+  transform: translateY(12px) scale(0.985);
+  transition: opacity 200ms var(--ease-out), transform 240ms var(--ease-out),
+    display 240ms allow-discrete, overlay 240ms allow-discrete;
+}
+
+.booking-modal[open] {
+  opacity: 1;
+  transform: none;
+}
+
+@starting-style {
+  .booking-modal[open] {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
 }
 
 .booking-modal::backdrop {
+  background: rgba(20, 22, 15, 0);
+  transition: background-color 220ms var(--ease-out), display 220ms allow-discrete,
+    overlay 220ms allow-discrete;
+}
+
+.booking-modal[open]::backdrop {
   background: rgba(20, 22, 15, 0.58);
+}
+
+@starting-style {
+  .booking-modal[open]::backdrop {
+    background: rgba(20, 22, 15, 0);
+  }
 }
 
 body:has(.booking-modal[open]) {
@@ -2310,3 +2362,19 @@ body:has(.booking-modal[open]) {
 }
 
 
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+
+  .booking-modal,
+  .booking-modal::backdrop {
+    transition: none;
+  }
+
+  .skeleton {
+    animation: none;
+  }
+}

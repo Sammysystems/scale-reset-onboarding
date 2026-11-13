@@ -15,10 +15,15 @@
       property="og:description"
       content="A two-week automation build for service businesses in Nigeria. Four questions, then a twenty-minute call."
     />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:image" content="https://scale-reset-onboarding.vercel.app/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Scale Reset: the follow-up, handled." />
     <link rel="preload" href="/assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/fonts/public-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="/assets/fonts.css" />
     <link rel="stylesheet" href="/assets/landing.css" />
     <script type="application/ld+json">
@@ -35,6 +40,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="top-stripe" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
     <header class="masthead">
       <div class="masthead-main">
@@ -42,17 +48,14 @@
           <span class="wordmark-mark" aria-hidden="true">SR</span>
           <span>The Scale Reset</span>
         </a>
-        <p class="masthead-note">Automation for service businesses<br />Lagos and Uyo, working remotely</p>
         <a class="btn btn-small" href="/start">Start the check</a>
       </div>
       <div class="masthead-sub">
-        <span class="mono">Work order / v1.0</span>
         <nav aria-label="Page sections">
           <a href="#builds">Builds</a>
           <a href="#how">How it works</a>
           <a href="#faq">FAQ</a>
         </nav>
-        <span class="mono">2026</span>
       </div>
     </header>
 
@@ -62,7 +65,10 @@
         <div class="docket-body">
           <div class="hero-grid">
             <div>
-              <h1 id="hero-title">The follow-up,<br />handled.</h1>
+              <h1 id="hero-title" aria-label="The follow-up, handled.">
+                <span class="line"><span>The follow-up,</span></span>
+                <span class="line"><span>handled.</span></span>
+              </h1>
               <p class="hero-lede">
                 A two-week build that answers enquiries, books jobs, and chases money.
               </p>
@@ -99,22 +105,53 @@
             </div>
 
             <figure class="hero-exhibit">
-              <img
-                src="/assets/check-phone.png"
-                width="390"
-                height="844"
-                alt="The four-question check on a phone, showing the first question about the business."
-              />
-              <figcaption>
-                <span class="mono">Exhibit A</span>
-                <span>The check, as it looks on a phone.</span>
-              </figcaption>
+              <div
+                class="hero-board"
+                role="img"
+                aria-label="Example flow: a new enquiry is captured, answered, booked, and followed up from one path."
+              >
+                <div class="board-head">
+                  <span class="mono">Live job</span>
+                  <span class="board-state"><span class="board-dot" aria-hidden="true"></span>In flow</span>
+                </div>
+                <div class="board-lead">
+                  <span class="mono">New enquiry</span>
+                  <strong>&ldquo;Can you fit a kitchen next month?&rdquo;</strong>
+                  <span class="board-meta">WhatsApp &middot; 18:42</span>
+                </div>
+                <ol class="board-steps">
+                  <li>
+                    <span class="board-no">01</span>
+                    <span class="board-copy"><strong>Captured</strong><span>One inbox, no tab-switching</span></span>
+                    <span class="board-tick" aria-hidden="true">&#10003;</span>
+                  </li>
+                  <li>
+                    <span class="board-no">02</span>
+                    <span class="board-copy"><strong>Answered</strong><span>Reply in your words</span></span>
+                    <span class="board-tick" aria-hidden="true">&#10003;</span>
+                  </li>
+                  <li class="is-live">
+                    <span class="board-no">03</span>
+                    <span class="board-copy"><strong>Booked</strong><span>Time held, reminder set</span></span>
+                    <span class="board-badge">Now</span>
+                  </li>
+                  <li>
+                    <span class="board-no">04</span>
+                    <span class="board-copy"><strong>Followed up</strong><span>Quote chases itself</span></span>
+                    <span class="board-line" aria-hidden="true"></span>
+                  </li>
+                </ol>
+                <div class="board-foot">
+                  <span class="mono">Next action</span>
+                  <span>Reminder &middot; 09:00</span>
+                </div>
+              </div>
             </figure>
           </div>
         </div>
       </section>
 
-      <section class="docket" aria-labelledby="leaks-title">
+      <section class="docket" data-reveal aria-labelledby="leaks-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">02</span></div>
         <div class="docket-body">
           <h2 id="leaks-title">Where the work leaks.</h2>
@@ -142,7 +179,7 @@
         </div>
       </section>
 
-      <section class="docket" id="how" aria-labelledby="jobs-title">
+      <section class="docket" data-reveal id="how" aria-labelledby="jobs-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">03</span></div>
         <div class="docket-body">
           <h2 id="jobs-title">One path, four jobs.</h2>
@@ -177,7 +214,7 @@
         </div>
       </section>
 
-      <section class="docket" aria-labelledby="time-title">
+      <section class="docket" data-reveal aria-labelledby="time-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">04</span></div>
         <div class="docket-body">
           <h2 id="time-title">Two weeks, one fixed price.</h2>
@@ -229,7 +266,7 @@
         </div>
       </section>
 
-      <section class="docket" id="builds" aria-labelledby="builds-title">
+      <section class="docket" data-reveal id="builds" aria-labelledby="builds-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">05</span></div>
         <div class="docket-body">
           <h2 id="builds-title">Recent builds.</h2>
@@ -263,7 +300,7 @@
         </div>
       </section>
 
-      <section class="docket" aria-labelledby="fit-title">
+      <section class="docket" data-reveal aria-labelledby="fit-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">06</span></div>
         <div class="docket-body">
           <h2 id="fit-title">Who this works for.</h2>
@@ -289,7 +326,7 @@
         </div>
       </section>
 
-      <section class="docket" aria-labelledby="call-title">
+      <section class="docket" data-reveal aria-labelledby="call-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">07</span></div>
         <div class="docket-body">
           <div class="call-grid">
@@ -310,7 +347,7 @@
         </div>
       </section>
 
-      <section class="docket" id="faq" aria-labelledby="faq-title">
+      <section class="docket" data-reveal id="faq" aria-labelledby="faq-title">
         <div class="rail" aria-hidden="true"><span class="rail-no">08</span></div>
         <div class="docket-body">
           <h2 id="faq-title">Questions, answered.</h2>
@@ -341,7 +378,7 @@
     </main>
 
     <section class="final" aria-labelledby="final-title">
-      <div class="final-inner">
+      <div class="final-inner" data-reveal>
         <h2 id="final-title">Start with the job you would pay to lose.</h2>
         <p>Four questions. Two minutes. Then a twenty-minute call if it is a fit.</p>
         <a class="btn" href="/start">Start the two-minute check</a>
@@ -352,8 +389,7 @@
     <footer class="footer">
       <div class="footer-main">
         <div>
-          <p><strong>The Scale Reset</strong><br />Automation for service businesses.</p>
-          <p>Lagos and Uyo, working remotely.</p>
+          <p><strong>The Scale Reset</strong></p>
         </div>
         <nav aria-label="Footer">
           <a href="#builds">Builds</a>

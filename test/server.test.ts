@@ -139,5 +139,22 @@ describe("onboarding HTTP surface", () => {
     const font = await fetch(url("/assets/fonts/archivo-var-latin.woff2"));
     expect(font.status).toBe(200);
     expect(font.headers.get("content-type")).toContain("font");
+    expect(font.headers.get("cache-control")).toContain("max-age=604800");
+  });
+
+  it("serves the landing page without retired copy and with the social cover", async () => {
+    const response = await fetch(url("/"));
+    expect(response.status).toBe(200);
+    const html = await response.text();
+    expect(html).not.toContain("Automation for service businesses");
+    expect(html).not.toContain("Exhibit A");
+    expect(html).not.toContain("check-phone.png");
+    expect(html).toContain("og-cover.png");
+    expect(html).toContain("Live job");
+
+    const cover = await fetch(url("/og-cover.png"));
+    expect(cover.status).toBe(200);
+    expect(cover.headers.get("content-type")).toBe("image/png");
+    expect(cover.headers.get("cache-control")).toContain("max-age=604800");
   });
 });

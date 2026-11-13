@@ -262,6 +262,17 @@ export async function startServer(options: ServerOptions): Promise<ServerHandle>
     return url.searchParams.get("token") === adminToken;
   };
 
+  const cacheFor = (file: string): string => {
+    const ext = path.extname(file).toLowerCase();
+    if (ext === ".woff2" || ext === ".png" || ext === ".svg") {
+      return "public, max-age=604800, stale-while-revalidate=86400";
+    }
+    if (ext === ".css" || ext === ".js") {
+      return "public, max-age=300, stale-while-revalidate=86400";
+    }
+    return "no-store";
+  };
+
   const serveFile = async (
     res: ServerResponse,
     file: string,
@@ -272,7 +283,7 @@ export async function startServer(options: ServerOptions): Promise<ServerHandle>
       const type = CONTENT_TYPES[path.extname(file).toLowerCase()] ?? "application/octet-stream";
       res.writeHead(status, {
         "Content-Type": type,
-        "Cache-Control": "no-store",
+        "Cache-Control": cacheFor(file),
       });
       res.end(data);
       return true;
@@ -347,6 +358,10 @@ export async function startServer(options: ServerOptions): Promise<ServerHandle>
 
       if (req.method === "GET" && pathname === "/favicon.svg") {
         if (await serveFile(res, path.join(publicRoot, "favicon.svg"))) return;
+      }
+
+      if (req.method === "GET" && pathname === "/og-cover.png") {
+        if (await serveFile(res, path.join(publicRoot, "og-cover.png"))) return;
       }
 
       if (req.method === "GET" && pathname.startsWith("/assets/")) {

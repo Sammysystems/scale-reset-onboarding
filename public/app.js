@@ -829,30 +829,41 @@ function afterRender() {
 }
 
 function render() {
-  if (state.loading) {
-    stepMeta.textContent = "Loading";
-    view.innerHTML = loadingView();
-    return;
-  }
+  const update = () => {
+    if (state.loading) {
+      stepMeta.textContent = "Loading";
+      view.innerHTML = loadingView();
+      return;
+    }
 
-  if (!state.session) {
-    stepMeta.textContent = "Invite only";
-    view.innerHTML = state.error ? errorView(state.error) : welcomeView();
-    return;
-  }
+    if (!state.session) {
+      stepMeta.textContent = "Invite only";
+      view.innerHTML = state.error ? errorView(state.error) : welcomeView();
+      return;
+    }
 
-  const name = viewName(state.session);
-  stepMeta.textContent = metaFor(state.session, name);
+    const name = viewName(state.session);
+    stepMeta.textContent = metaFor(state.session, name);
 
-  const renderers = {
-    step: stepView,
-    booking: bookingView,
-    booked: bookedView,
-    proposal: proposalView,
+    const renderers = {
+      step: stepView,
+      booking: bookingView,
+      booked: bookedView,
+      proposal: proposalView,
+    };
+
+    view.innerHTML = (renderers[name] || welcomeView)();
+    afterRender();
   };
 
-  view.innerHTML = (renderers[name] || welcomeView)();
-  afterRender();
+  const canTransition =
+    !state.loading &&
+    state.session &&
+    typeof document.startViewTransition === "function" &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (canTransition) document.startViewTransition(update);
+  else update();
 }
 
 function stopPoll() {
