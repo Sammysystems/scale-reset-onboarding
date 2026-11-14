@@ -436,8 +436,8 @@ h2 {
 }
 
 .hero h1 {
-  max-width: 11ch;
-  font: 800 clamp(48px, 7.2vw, 96px) / 0.94 var(--display);
+  max-width: 100%;
+  font: 800 clamp(44px, 5.1vw, 66px) / 0.94 var(--display);
   font-stretch: 125%;
   letter-spacing: -0.03em;
   overflow-wrap: break-word;
@@ -1610,8 +1610,22 @@ a.build:hover .build-name {
     justify-content: flex-start;
   }
 
+  .hero {
+    padding-top: 34px;
+  }
+
   .hero h1 {
-    font-size: clamp(44px, 13vw, 64px);
+    font-size: clamp(38px, 11vw, 56px);
+    line-height: 0.92;
+  }
+
+  .hero-lede {
+    margin-top: 18px;
+    font-size: 17px;
+  }
+
+  .picker {
+    margin-top: 26px;
   }
 
   .hero-board {
@@ -1636,6 +1650,7 @@ a.build:hover .build-name {
     flex-direction: column;
     align-items: stretch;
     gap: 16px;
+    margin-top: 24px;
   }
 
   .hero-actions .btn {
@@ -1656,6 +1671,70 @@ a.build:hover .build-name {
 
   .final .btn {
     width: 100%;
+  }
+}
+
+@media (min-width: 861px) and (max-height: 820px) {
+  .hero {
+    padding-top: 34px;
+  }
+
+  .hero-lede {
+    margin-top: 16px;
+  }
+
+  .picker {
+    margin-top: 28px;
+  }
+
+  .hero-actions {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 520px) and (max-height: 760px) {
+  .hero {
+    padding-top: 24px;
+  }
+
+  .hero-lede {
+    margin-top: 14px;
+  }
+
+  .picker {
+    margin-top: 20px;
+  }
+
+  .hero-actions {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 520px) and (max-height: 700px) {
+  .hero {
+    padding-top: 14px;
+  }
+
+  .hero-lede {
+    margin-top: 8px;
+    font-size: 15.5px;
+    line-height: 1.4;
+  }
+
+  .picker {
+    margin-top: 12px;
+  }
+
+  .picker-help {
+    display: none;
+  }
+
+  .chip {
+    min-height: 40px;
+  }
+
+  .hero-actions {
+    margin-top: 10px;
   }
 }
 

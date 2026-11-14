@@ -149,8 +149,14 @@ describe("onboarding HTTP surface", () => {
     expect(html).not.toContain("Automation for service businesses");
     expect(html).not.toContain("Exhibit A");
     expect(html).not.toContain("check-phone.png");
+    expect(html).not.toContain("two-week");
+    expect(html).not.toContain("fixed price");
+    expect(html).not.toContain("no retainer");
+    expect(html).not.toContain("The follow-up, handled");
     expect(html).toContain("og-cover.png");
-    expect(html).toContain("Live job");
+    expect(html).toContain("Grow without more manual work");
+    expect(html).toContain("The audit comes first");
+    expect(html).toContain("Example job");
 
     const cover = await fetch(url("/og-cover.png"));
     expect(cover.status).toBe(200);

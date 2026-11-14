@@ -31,49 +31,50 @@ keep doing by hand.
 
 ## 3. Positioning
 
-Category: automation studio for service businesses.
-One-line promise: **The follow-up, handled.**
-What it is: a two-week build that connects the path from first message to paid job,
-then hands over the controls.
+Category: audit-led systems studio for service businesses.
+One-line promise: **Grow without more manual work.**
+What it is: an audit that finds where work leaks, one quick win in week one, then a
+four to eight week build that carries the path, with a handover and 30-day support.
 Proof style: working builds, shown plainly.
 Voice: Samuel. Direct, specific, unexcited by technology, focused on the work that
 gets dropped.
 
-Offer: a two-week automation sprint. One fixed price, scoped on a 20-minute call.
-No retainer. The owner keeps the system and the written SOP.
+Offer: a business process audit, a written process map, a quick win in week one, the
+full system build, handover, and 30-day support. Ongoing support is optional after
+that. The page carries no price figure; scope and cost are agreed after the audit.
 
 Differentiators, in order:
-1. Narrow scope. One path, fixed in two weeks.
+1. Audit first. No build starts until the leak is proven.
 2. Operator-built. Samuel builds it, not a sales team.
-3. Handover. Admin view plus written SOP, so it runs without him.
-4. No retainer. The work ends; the system stays.
+3. Quick win. One visible improvement lands in week one.
+4. Handover. Admin view plus written SOP, so it runs without him.
 
 ## 4. Message hierarchy
 
-1. Name the outcome: follow-up handled, enquiries answered, jobs booked.
+1. Name the outcome: growth without more manual work.
 2. Show where the work leaks today.
-3. Show the mechanism: capture, answer, book, follow up.
-4. Make the two weeks and the fixed price concrete.
+3. Show the mechanism: audit, process map, quick win, build.
+4. Show what the system takes off the owner's plate.
 5. Prove it with builds that exist.
 6. Qualify: who this is for and who it is not for.
-7. Remove risk: the call produces a written scope either way.
+7. Remove risk: the call starts the audit, with a written scope before any build.
 8. Answer the expensive objections.
 9. Ask for the check.
 
 ## 5. Page map and word budget
 
-Each 900px window stays around 80 words. The full page carries about 550 words of prose, with the FAQ read as a scannable list.
+Each 900px window stays around 80 to 110 words. The full page carries about 650 words of prose, with the FAQ read as a scannable list.
 
 | # | Section | Job | Words |
 |---|---|---|---|
-| 1 | Hero | Promise, picker, primary action | 40 |
-| 2 | The leak | Make the cost concrete without invented stats | 60 |
-| 3 | The reset | Show the four jobs and what the owner stops doing | 80 |
-| 4 | The two weeks | Timeline, scope, fixed price | 75 |
+| 1 | Hero | Promise, picker, primary action | 50 |
+| 2 | The leak | Make the cost concrete without invented stats | 70 |
+| 3 | The audit | Show audit, map, quick win, build | 100 |
+| 4 | The system | Show the four jobs, scope, and what stops | 110 |
 | 5 | Recent builds | Show working systems, labelled honestly | 60 |
-| 6 | Fit | Qualify in and out | 45 |
-| 7 | The call | Explain the 20 minutes and the written scope | 45 |
-| 8 | FAQ | Price, tools, data, after, location, VA | 80 |
+| 6 | Fit | Qualify in and out | 70 |
+| 7 | The call | Explain the 20 minutes and the written scope | 55 |
+| 8 | FAQ | Cost, time, tools, data, after, location | 130 |
 | 9 | Final CTA | Repeat the action | 20 |
 
 ## 6. Design direction: The Work Order
@@ -199,7 +200,7 @@ Ready:
 Needed before launch:
 - Founder photo, or approval to use a typed signature only.
 - WhatsApp number for the footer and the "ask a question" link.
-- Price range, if Samuel wants one shown. Copy currently avoids a number.
+- Approval to keep the page number-free and quote after the audit.
 - Approval of the response-time promise and the "written scope either way" line.
 - Approval of the privacy note for collected business data.
 - Confirmation that the demonstration captures may be shown publicly.

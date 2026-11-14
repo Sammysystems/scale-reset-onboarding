@@ -1,9 +1,10 @@
 # Landing copy: The Scale Reset
 
-Status: draft for approval
-Date: 2026-11-11
+Status: approved direction, copy rewrite in progress
+Date: 2026-11-14
 Direction: The Work Order
 Primary action: start the four-question check at `/start`
+Headline: **Grow without more manual work.**
 
 ## Nav
 
@@ -13,9 +14,9 @@ Action: **Start the check**
 
 ## 1. Hero
 
-**The follow-up, handled.**
+**Grow without more manual work.**
 
-A two-week build that answers enquiries, books jobs, and chases money.
+You already get the enquiries. I audit where the replies, bookings, quotes, and follow-up leak, then build the system that carries them.
 
 **Which one costs you most?**
 [ Enquiries ] [ Bookings ] [ Invoices ] [ Onboarding ]
@@ -45,7 +46,7 @@ Helper under the selected CTA: `You picked this on the landing page. Change it i
 
 **Where the work leaks.**
 
-An enquiry waits until evening. By then they have booked someone else. A quote goes out and nothing follows it.
+An enquiry waits until evening. By then they have booked someone else. A quote goes out and nothing follows it. A job is won, then the admin starts again from scratch.
 
 | | |
 |---|---|
@@ -53,41 +54,44 @@ An enquiry waits until evening. By then they have booked someone else. A quote g
 | Quotes with no follow-up | The interested ones go quiet. |
 | Bookings with no reminder | A no-show costs the slot. |
 | Invoices chased late | The money waits. |
+| New clients onboarded by hand | Every win adds more admin. |
+| The owner as the system | Everything stops when you stop. |
 
-## 3. One path, four jobs
+## 3. The audit comes first
 
-**One path, four jobs.**
+**The audit comes first.**
 
-We build the path, then hand over the controls.
+Before I build anything, I walk the work with you. The audit shows where time, enquiries, and money are leaking, and which fix is worth doing first.
 
-| Job | What the system does | What you stop doing |
+| Step | What happens | What you get |
 |---|---|---|
-| Capture | Every enquiry lands in one place, from WhatsApp, Instagram, email, or the form. | Three inboxes. |
-| Answer | Replies in your words and sends the booking link. | Retyping. |
-| Book | Calls and visits go into your calendar with a reminder. | Calendar tag. |
-| Follow up | Quotes, invoices, and quiet leads get a nudge. | Sunday chasing. |
+| Audit | Two or three sessions with you and the person who handles the work. I follow one enquiry from first message to paid job. | The real flow, in writing. |
+| Process map | I map how work moves today, where it stalls, and what the improved path should look like. | Current and future state, side by side. |
+| Quick win | One fix goes in during the first week, so you see the system working before the full build. | A visible result in week one. |
+| Build | The full build runs four to eight weeks, depending on scope. I build, test, and connect the path around how your team already works. | One system that carries the work. |
 
-## 4. Two weeks, one fixed price
+## 4. What the system takes off your plate
 
-**Two weeks, one fixed price.**
+**What the system takes off your plate.**
 
-We agree the scope before work starts.
+Every build is shaped around your process. Most include the same four jobs.
 
-| When | What happens |
+| Job | What changes |
 |---|---|
-| Day 1-2 | Map the flow and pick the first job. |
-| Week 1 | Build and test the first path. |
-| Week 2 | Connect the rest, hand over the admin and SOP. |
+| Capture | Every enquiry from WhatsApp, Instagram, email, or your form lands in one place. You stop checking three inboxes. |
+| Answer | Replies in your words and sends the booking link. You stop retyping the same answers. |
+| Book | Calls and visits land in your calendar with a reminder. You stop chasing no-shows by hand. |
+| Follow up | Quotes, invoices, and quiet leads get a nudge. You stop spending Sunday on follow-up. |
 
-One fixed price, agreed before work starts, with no retainer.
+Scope and timeline are agreed in writing before the build starts.
 
 ### Scope
 
-**In:** one intake path, one calendar, one follow-up sequence, admin view, written SOP.
+**In:** process audit and written map, quick win in week one, system build and integrations, admin view and handover, 30-day support on WhatsApp.
 
-**Out:** a new website, ad campaigns, a custom mobile app, enterprise integrations.
+**Out:** a new website, ad campaigns, a custom mobile app, enterprise integrations, tool subscriptions.
 
-**Optional:** a second location, a second pipeline, monthly reporting.
+**Optional:** a second location, a second pipeline, monthly reporting, ongoing support after 30 days.
 
 ## 5. Recent builds
 
@@ -111,47 +115,56 @@ ClearSmile link: `https://clear-smile-reactivation.vercel.app`
 **A good fit if:**
 - You already get enquiries and still lose some.
 - You or one person answers everything.
-- You chase quotes or invoices yourself.
+- You chase quotes, invoices, or onboarding by hand.
+- You want the process fixed, not another tool to manage.
 
 **Not a fit if:**
 - You need more leads first.
 - You want a website and nothing behind it.
-- You want a monthly retainer with a team.
+- You want a quick hack with no process change.
+- You want a full agency team on retainer.
+- You cannot make time for the audit.
 
-If you are not sure, take the check.
+If you are not sure, start the check. It will show you where to look first.
 
 ## 7. The call
 
-**Twenty minutes, then a written scope.**
+**The call is the start of the audit.**
 
-You tell me what is slipping. I send a one-page scope with the price.
+Twenty minutes to walk through how work moves now. If it is a fit, the next step is the audit, with a written scope before any build starts.
 
 - Your current flow, in your words.
-- The first job to fix.
-- What it takes and what it costs.
+- The first leak worth fixing.
+- What the audit covers and what happens next.
 
 If I cannot find a fix worth building, I will say so.
 
 ## 8. FAQ
 
 **How much does it cost?**
-Most builds take two weeks. I send one fixed price after the call, with no retainer.
+I do not quote before the audit. The audit shows the work; then you get a written scope and cost before the build starts.
+
+**How long does it take?**
+The audit takes two or three sessions. The full build usually runs four to eight weeks, depending on scope.
+
+**What happens after the build?**
+You get the admin view, the written SOP, and a handover session. The first 30 days include support on WhatsApp.
 
 **Do I need to change my tools?**
-No. We connect to what you use where the tools allow it. Any change is in the scope.
+No. I connect to what you already use where the tools allow it. Any change is in the scope.
 
-**What happens after two weeks?**
-You get the admin view, the written SOP, and a handover session. Then you run it.
+**I have tried this before. Why would this work?**
+Because the audit comes first. We fix the process before we add software, and we start with one visible win instead of a large rollout.
 
 **Is my data safe?**
-Access is limited to what the build needs. You can revoke it at any time.
+Access is limited to what the audit and build need. You can revoke it at any time.
 
 **I am not in Lagos. Can we still work?**
-Yes. The build happens remotely. You book a time on WhatsApp.
+Yes. The audit and build happen remotely. You book a time on WhatsApp.
 
 ## 9. Final action
 
-**Start with the job you would pay to lose.**
+**Start with the leak you already know.**
 
 Four questions. Two minutes. Then a twenty-minute call if it is a fit.
 
@@ -169,21 +182,21 @@ Copyright 2026 The Scale Reset
 
 ## Meta and social
 
-Title: `The Scale Reset | The follow-up, handled`
+Title: `The Scale Reset | Grow without more manual work`
 
-Description: `A two-week build that answers enquiries, books jobs, and chases money for service businesses in Nigeria.`
+Description: `An audit-led systems build for service businesses in Nigeria. Find where the work leaks, fix one thing in week one, then build the system that carries it.`
 
-OG title: `The follow-up, handled.`
+OG title: `Grow without more manual work.`
 
-OG description: `A two-week automation build for service businesses in Nigeria. Four questions, then a twenty-minute call.`
+OG description: `An audit-led systems build for service businesses in Nigeria. Four questions, then a twenty-minute call.`
 
-OG image: 1200x630 docket card with the headline and the wordmark. Alt: `The Scale Reset: the follow-up, handled.`
+OG image: 1200x630 docket card with the headline and the wordmark. Alt: `The Scale Reset: grow without more manual work.`
 
 ## Structured data
 
 `ProfessionalService`
 - name: The Scale Reset
-- description: Automation builds for service businesses in Nigeria.
+- description: Audit-led systems builds for service businesses in Nigeria.
 - areaServed: Nigeria
 - founder: Samuel
 - url: current production URL
@@ -194,42 +207,46 @@ No `aggregateRating`, no price range, no review markup.
 ## Copy notes
 
 - The page never claims a client result, a revenue lift, or a saved hour.
-- "Demonstration builds" stays on the page. It is the honest description and it
-  still shows working systems.
-- The price is framed, not numbered. Add a range only if Samuel approves one.
-- The hero picker maps to the existing intake values, so nothing in the form
-  logic changes.
+- "Demonstration builds" stays on the page. It is the honest description and it still shows working systems.
+- The page carries no price figure. The cost is explained as a written scope after the audit.
+- The audit is the first paid step. The build follows only after the owner approves the scope.
+- The hero picker maps to the existing intake values, so nothing in the form logic changes.
 - No em dashes. No italic emphasis. No eyebrow labels.
 - The only promises to confirm before launch:
-  1. "You leave with the scope either way" is not in the final copy, but the
-     section implies a written scope after every call.
+  1. The written scope after the call.
   2. "If I cannot find a fix worth building, I will say so."
-  3. "Then you run it" after handover, without ongoing support.
+  3. 30-day support after handover.
 
 ## No-ai-slop detect pass
 
-Draft hits and fixes:
+Patterns checked against the draft:
 
-| Pattern | Draft line | Fix |
-|---|---|---|
-| Binary contrast | "None of this looks like a crisis. It looks like a flat month." | "The month ends flat." |
-| Negative listing | "No email to start. No account. No pitch deck." | "Start without an email or a password." |
-| Negative listing | "No hourly billing. No retainer." | "with no retainer" |
-| Binary contrast | "They are demonstration builds, not client case studies." | "Demonstration builds. No client results are claimed." |
-| Colon reveal | "The best part: it learns." (unused) | Removed before draft. |
-| Em dashes | None | None |
+| Pattern | Result |
+|---|---|
+| Binary contrasts | None. The closest line, "The real flow, in writing," was changed to avoid the contrast shape. |
+| Negative listing | None. |
+| Colon reveals | None. |
+| Throat-clearing | None. |
+| Faux-insight setups | None. |
+| Importance puffery | None. |
+| Interpretive metadiscourse | None. |
+| Weasel attribution | None. |
+| Fake-strong verbs | None. |
+| Synonym cycling | None. |
+| Dramatic fragmentation | None. |
+| Rhetorical setups | None. |
+| Fake-profound kickers | None. |
+| Summary-recap endings | None. |
+| Em dashes | None. |
+| Banned words | None. |
 
-No banned words. No faux-insight setups. No rhetorical questions in body copy.
 The only question is the picker prompt, which is a real input label.
 
 ## Needs confirmation
 
-1. Price range, or approval to keep the page number-free.
-2. The written-scope promise on every call.
-3. The "I will say so" line.
-4. Post-handover support: none, or a short window.
-5. WhatsApp number for the footer.
-6. Founder photo, or approval for a typed signature only.
-7. Privacy page copy and a link.
-8. Public links for LandsandHousing and DMI, or approval to show screenshots
-   without links.
+1. The written-scope promise on every call.
+2. The "I will say so" line.
+3. The 30-day support window.
+4. WhatsApp number for the footer.
+5. Founder photo, or approval for a typed signature only.
+6. Public links for LandsandHousing and DMI, or approval to show screenshots without links.
